@@ -3,17 +3,17 @@ import org.kde.plasma.configuration 2.0
 
 ConfigModel {
     ConfigCategory {
-        name: i18n("Appearance")
+        name: i18n("Apparence")
         icon: "preferences-desktop-color"
         source: "config/configAppearance.qml"
     }
     ConfigCategory {
-        name: i18n("Behaviour")
+        name: i18n("Comportement")
         icon: "preferences-desktop"
         source: "config/configBehaviour.qml"
     }
     ConfigCategory {
-        name: i18n("Color schemes")
+        name: i18n("Thèmes")
         icon: "color-picker"
         source: "config/configColorscheme.qml"
         visible: Plasmoid.configuration.showColorSwitcher

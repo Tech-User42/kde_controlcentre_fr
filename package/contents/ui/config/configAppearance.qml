@@ -52,7 +52,7 @@ ColumnLayout {
 
         SpinBox {
             id: scale
-            Kirigami.FormData.label: i18n("Scale:")
+            Kirigami.FormData.label: i18n("Echelle:")
             from: 0; to: 1000
         }
 
@@ -63,11 +63,11 @@ ColumnLayout {
         CheckBox {
             id: showPercentage
             Kirigami.FormData.label: i18n("General:")
-            text: i18n("Show volume/brightness percentage")
+            text: i18n("Afficher le pourcentage de volume/luminosité")
         }
         CheckBox {
             id: transparency
-            text: i18n("Enable transparency")
+            text: i18n("Activer la transparence")
         }
 
         Item {
@@ -76,38 +76,38 @@ ColumnLayout {
 
         CheckBox {
             id: showKDEConnect
-            Kirigami.FormData.label: i18n("Show quick toggle buttons:")
+            Kirigami.FormData.label: i18n("Afficher les raccourcis rapides :")
             text: i18n('KDE Connect')
             enabled: !checked && numChecked < maxNum || checked
         }
         CheckBox {
             id: showNightColor
-            text: i18n('Night Color')
+            text: i18n('Mode Nuit')
             enabled: !checked && numChecked < maxNum || checked
         }
         CheckBox {
             id: showColorSwitcher
-            text: i18n('Color Scheme Switcher')
+            text: i18n('Changement de thème')
             enabled: !checked && numChecked < maxNum || checked
         }
         CheckBox {
             id: showCmd1
-            text: i18n('Custom Command Block 1')
+            text: i18n('Commande custom 1')
             enabled: !checked && numChecked < maxNum || checked
         }
         Kirigami.FormLayout {
             visible: showCmd1.checked
             TextField {
                 id: cmdTitle1
-                Kirigami.FormData.label: i18n("Name:")
+                Kirigami.FormData.label: i18n("Nom :")
             }
             TextField {
                 id: cmdRun1
-                Kirigami.FormData.label: i18n("Command:")
+                Kirigami.FormData.label: i18n("Commande :")
             }
             Button {
                 id: cmdIcon1
-                Kirigami.FormData.label: i18n("Icon:")
+                Kirigami.FormData.label: i18n("Icone :")
                 icon.width: PlasmaCore.Units.iconSizes.medium
                 icon.height: icon.width
                 onClicked: {
@@ -118,22 +118,22 @@ ColumnLayout {
         }
         CheckBox {
             id: showCmd2
-            text: i18n('Custom Command Block 2')
+            text: i18n('Commande custom 2')
             enabled: !checked && numChecked < maxNum || checked
         }
         Kirigami.FormLayout {
             visible: showCmd2.checked
             TextField {
                 id: cmdTitle2
-                Kirigami.FormData.label: i18n("Name:")
+                Kirigami.FormData.label: i18n("Nom :")
             }
             TextField {
                 id: cmdRun2
-                Kirigami.FormData.label: i18n("Command:")
+                Kirigami.FormData.label: i18n("Commande :")
             }
             Button {
                 id: cmdIcon2
-                Kirigami.FormData.label: i18n("Icon:")
+                Kirigami.FormData.label: i18n("Icone :")
                 icon.width: PlasmaCore.Units.iconSizes.medium
                 icon.height: icon.width
                 onClicked: {
@@ -143,7 +143,7 @@ ColumnLayout {
             }
         }
         Label {
-            text: i18n("You can enable only 2 toggle buttons at a time.")
+            text: i18n("Seules 2 options peuvent co-exister.")
             font: PlasmaCore.Theme.smallestFont
             color: PlasmaCore.Theme.neutralTextColor
             Layout.fillWidth: true
@@ -156,16 +156,16 @@ ColumnLayout {
 
         CheckBox {
             id: showVolume
-            Kirigami.FormData.label: i18n("Show other components:")
-            text: i18n('Volume Control')
+            Kirigami.FormData.label: i18n("Afficher les autres composants :")
+            text: i18n('Contrôle du volume')
         }
         CheckBox {
             id: showBrightness
-            text: i18n('Brightness Control')
+            text: i18n('Contrôle de la luminosité')
         }
         CheckBox {
             id: showMediaPlayer
-            text: i18n('Media Player')
+            text: i18n('Lecteur multimédia')
         }
     }
 

@@ -4,19 +4,23 @@
             {
                 "Email": "prayagjain2@gmail.com",
                 "Name": "Prayag Jain"
+            },
+            {
+                "Email": "user@tech-user.com",
+                "Name": "Tech-User42"
             }
         ],
         "Category": "Utilities",
-        "Description": "A control centre inspired by MacOS!",
+        "Description": "Un centre de contrôles inspiré de macOS!",
         "Icon": "configure-toolbars",
         "Id": "com.github.prayag2.controlcentre",
         "License": "GPLv3",
-        "Name": "Control Centre",
+        "Name": "Centre de contrôle macOS",
         "ServiceTypes": [
             "Plasma/Applet"
         ],
         "Version": "0.1.0",
-        "Website": "https://github.com/prayag2/kde_controlcentre"
+        "Website": "https://github.com/Tech-User42/kde_controlcentre_fr"
 
     },
     "X-Plasma-API": "declarativeappletscript",

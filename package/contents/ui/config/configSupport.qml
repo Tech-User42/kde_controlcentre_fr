@@ -10,7 +10,7 @@ ColumnLayout {
     Layout.fillWidth: true
     
     PlasmaExtras.Heading {
-        text: i18n("If you'd like to support me :)")
+        text: i18n("Si vous voulez me soutenir ;)")
     }
     Row {
         spacing: 10

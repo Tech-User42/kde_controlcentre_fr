@@ -22,7 +22,7 @@ Lib.CardButton {
     }
     Layout.fillWidth: true
     Layout.fillHeight: true
-    title: i18n("Night Color")
+    title: i18n("Mode Nuit")
     PlasmaCore.IconItem {
         anchors.fill: parent
         source: monitor.running ? "redshift-status-on" : "redshift-status-off"

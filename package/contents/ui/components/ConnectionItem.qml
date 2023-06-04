@@ -24,9 +24,9 @@ Lib.LongButton {
         } else if (Uuid && ConnectionState === PlasmaNM.Enums.Deactivated) {
             return LastUsed
         } else if (ConnectionState === PlasmaNM.Enums.Activated) {
-            return i18n("Connected")
+            return i18n("Connecté")
         } 
-        return "Unknown"
+        return "Inconnu"
     }
     subtitle: itemText()
 

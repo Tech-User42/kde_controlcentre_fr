@@ -28,7 +28,7 @@ Lib.Card {
                 var artist = audioMetadata["xesam:artist"]
                 var thumb = audioMetadata["mpris:artUrl"]   
                 
-                audioTitle.text = title ? title : i18n("Unknown Media")
+                audioTitle.text = title ? title : i18n("Média Inconnu")
                 audioThumb.source = thumb ? thumb : "../../assets/music.png"
                 
                 audioArtist.visible = true
@@ -39,7 +39,7 @@ Lib.Card {
                 try {
                     audioArtist.text = artist.join(", ")
                 } catch(err) {
-                    audioArtist.text = artist ? artist : i18n("Unknown Artist")
+                    audioArtist.text = artist ? artist : i18n("Artist Inconnu")
                 } 
             } else {
                 playIcon.source = "media-playback-start"
@@ -53,7 +53,7 @@ Lib.Card {
             audioThumb.visible = false
             audioControls.visible = false
             audioTitle.horizontalAlignment = Qt.AlignHCenter
-            audioTitle.text = i18n("No Media Playing")
+            audioTitle.text = i18n("Aucun média en cours de lecture")
             dataChanged()
         }
         Component.onCompleted: {
@@ -61,7 +61,7 @@ Lib.Card {
             audioThumb.visible = false
             audioControls.visible = false
             audioTitle.horizontalAlignment = Qt.AlignHCenter
-            audioTitle.text = i18n("No Media Playing")
+            audioTitle.text = i18n("Aucun média en cours de lecture")
             dataChanged()
         }
     }

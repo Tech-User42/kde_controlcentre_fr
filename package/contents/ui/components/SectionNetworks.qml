@@ -63,7 +63,7 @@ Lib.Card {
                     }
 
                     PlasmaComponents.Label {
-                        text: i18n("Network Connections")
+                        text: i18n("Connexions Réseau")
                         font.pixelSize: root.largeFontSize * 1.2
                         Layout.fillWidth: true
                     }
@@ -81,7 +81,7 @@ Lib.Card {
                         onToggled: network.handler.enableWireless(checked)
 
                         PlasmaComponents3.ToolTip {
-                            text: wifiSwitchButton.checked ? i18n("Disable Wi-Fi") : i18n("Enable Wi-Fi")
+                            text: wifiSwitchButton.checked ? i18n("Désactiver le Wi-Fi") : i18n("Activer le Wi-Fi")
                         }
 
                         PlasmaComponents3.BusyIndicator {
@@ -128,7 +128,7 @@ Lib.Card {
                         }
 
                         PlasmaComponents3.ToolTip {
-                            text: airPlaneModeSwitchButton.checked ? i18n("Disable airplane mode") : i18n("Enable airplane mode")
+                            text: airPlaneModeSwitchButton.checked ? i18n("Désactiver le mode avion") : i18n("Activer le mode avion")
                         }
 
                     }

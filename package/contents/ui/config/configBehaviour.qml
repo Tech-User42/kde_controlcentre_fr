@@ -15,8 +15,8 @@ ColumnLayout {
     Kirigami.FormLayout {
         CheckBox {
             id: playVolumeFeedback 
-            Kirigami.FormData.label: i18n("Volume:")
-            text: i18n('Play Volume Feedback')
+            Kirigami.FormData.label: i18n("Volume :")
+            text: i18n('Jouer un retour')
         }
     }
 

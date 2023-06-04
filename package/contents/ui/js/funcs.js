@@ -9,17 +9,17 @@ function getBtDevice() {
     }
 
     if (btManager.bluetoothBlocked) {
-        return i18n("Disabled");
+        return i18n("Désactivé");
     } else if (!btManager.bluetoothOperational) {
         if (!btManager.adapters.length) {
-            return i18n("Unavailable");
+            return i18n("Undisponible");
         } else {
-            return i18n("Offline");
+            return i18n("Hors-Ligne");
         }
     } else if (connectedDevices.length >= 1) {
         return i18n(connectedDevices[0].name)
     } else {
-        return i18n("Not Connected");
+        return i18n("Déconnecté");
     }
 }
 

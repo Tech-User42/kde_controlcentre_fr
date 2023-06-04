@@ -32,7 +32,7 @@ Lib.Card {
         spacing: 0
         
         Lib.LongButton {
-            title: i18n("Network")
+            title: i18n("Réseau")
             subtitle: network.networkStatus
             source: network.activeConnectionIcon
             sourceColor: network.networkStatus === "Connected" ? PlasmaCore.Theme.highlightColor : PlasmaCore.Theme.disabledTextColor
@@ -51,8 +51,8 @@ Lib.Card {
         }
         
         Lib.LongButton {
-            title: i18n("Settings")
-            subtitle: i18n("System Settings")
+            title: i18n("Réglages")
+            subtitle: i18n("Paramètres Système")
             source: "settings-configure"
             onClicked: {
                 KCMShell.openSystemSettings("")

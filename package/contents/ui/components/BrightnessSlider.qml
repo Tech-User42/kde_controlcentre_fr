@@ -18,7 +18,7 @@ Lib.Slider {
     Layout.preferredHeight: root.sectionHeight/2
     
     // Slider properties
-    title: "Display Brightness"
+    title: "Luminosité de l'écran"
     source: "brightness-high"
     secondaryTitle: Math.round((screenBrightness / maximumScreenBrightness)*100) + "%"
     

@@ -74,7 +74,7 @@ Item {
             Label {
                 Layout.row :0
                 Layout.column: 0
-                text: i18n("Light color")
+                text: i18n("Thème Clair")
             }
 
             ComboBox {
@@ -93,7 +93,7 @@ Item {
             Label {
                 Layout.row :1
                 Layout.column: 0
-                text: i18n("Dark color")
+                text: i18n("Thème Sombre")
             }
 
             ComboBox {
